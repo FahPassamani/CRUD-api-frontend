@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Clientes</title>
+    
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container mt-4">
+            <div class="col-lg-7 mb-5 mb-lg-0 position-relative">
+                <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+                
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <form action="/api" method="POST">
+                            <div class="row">
+                                <h1 class="mb-3 h3">Clientes</h1>
+                                <div class="col-md-12 mb-4">
+                            <div class="box-nav">
+                                <a href="/add-user" class="border-shadow">
+                                    <span class="text-gradient">Novo Cliente</span>
+                                </a>
+                            </div>
+                            <div class="col-md-8 mb-10">
+                                <a href="/" class="border-shadow">
+                                    <span class="text-gradient">HOME</span>
+                                </a>
+                            </div>
+                            <form action="/" method="POST">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nome</th>
+                                            <th>CPF</th>
+                                            <th>Email</th>
+                                            <th>Telefone</th>
+                                            <th>Edit/Delet</th>
+                                        </tr>
+                                    </thead>
+                                        <tbody>
+                                            <%- include('include/_show') %>
+                                        </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

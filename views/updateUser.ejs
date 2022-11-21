@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+  
+          <div class="card bg-glass">
+              <div class="card-body px-4 py-5 px-md-5">
+                  <form method="POST" id="update_user">
+                    <div class="new_user">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <div class="box-nav">
+                                <div class="filter">
+                                    <a href="/api">Todos os Clientes</a>
+                                </div> 
+                            </div>
+                            <div class="form-title text-center">
+                                <h2 class="text-dark">Atualizar Usuario</h2>
+                            </div>
+                            <div class="form-group">
+                                <label for="Email" class="text-dark">Email</label>
+                                <input type="text" name="name" value="<%= user.email %>">
+                            </div>
+                            <div class="form-group">
+                                <label for="Telefone" class="text-dark">Telefone</label>
+                                <input type="text" name="telefone" value="<%= user.tel %>">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn text-dark update">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>

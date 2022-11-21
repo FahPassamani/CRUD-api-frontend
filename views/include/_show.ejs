@@ -1,0 +1,16 @@
+<% for(var i = 0; i < users.length; i++) { %>
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= users[i].name %></td>
+    <td><%= users[i].cpf %></td>
+    <td><%= users[i].email %></td>
+    <td><%= users[i].tel %></td>
+    <td><a href="/update-user?id=<%= users[i]._id %>" class="btn border-shadow update"><i class="fa fa-pencil"></i>
+        <span class="text-gradient"></span>
+    </a>
+        <a class="btn border-shadow delete" data-id=<%= users[i]._id%>>
+            <span class="text-gradient"></span><i class="fa fa-trash"></i>
+    </a>
+    </td>
+</tr>
+<% } %>
